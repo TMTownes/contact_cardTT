@@ -20,3 +20,4 @@ node_modules/node/node_modules/node-darwin-x64/share/doc/node/gdbinit
 *.py
 *.1
 node_modules/node/README.md
+img/.DS_Store
