@@ -1,0 +1,83 @@
+ /* Carousel Styling
+ #introCarousel,
+ .carousel-inner,
+ .carousel-item,
+ .carousel-item-active {
+   height: 100vh;
+   /* margin: 150px; 
+ }
+
+ .carousel-item:nth-child(1) {
+   background-image: url("./img/portrait1.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+ }
+
+ .carousel-item:nth-child(2) {
+   background-image: url("./img/laptop-macbook.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+ }
+
+ .carousel-item:nth-child(3) {
+   background-image: url("./img/wDragon.PNG");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+ }
+
+ .mask {
+   margin: auto;
+   height: 100vh;
+   background: linear-gradient(
+   45deg,
+   rgba(156, 175, 70, 0.7),
+   rgba(61, 92, 77, 0.591) 100%
+   );
+   position: relative;
+   justify-content: center;
+   padding-bottom: 300px;
+   
+ }
+
+ /* Card Image Styling 
+ .card img {
+   height: 250px;
+   width: 100%;
+   object-fit: cover;
+ }
+
+ .card-body {
+   height: 300px;
+   width: 100%;
+   object-fit: contain;
+   padding: 5px;
+ }
+
+ .btn-primary {
+   background-color: rgb(43, 90, 43);
+ }
+
+   /* Height for devices larger than 576px 
+@media (min-width: 992px) {
+ #introCarousel {
+   margin-top: -58.59px;
+ }
+ #introCarousel,
+ .carousel-inner,
+ .carousel-item,
+ .carousel-item.active {
+   height: 50vh;
+ }
+
+}
+
+.navbar .nav-link {
+ color: #fff !important;
+}
+
+.card {
+  border-radius: 4px;
+} */
