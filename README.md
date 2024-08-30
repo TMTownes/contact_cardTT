@@ -9,3 +9,7 @@ Standard HTML and CSS used for landing page
 ### 2. Bootstrap 5
 
 Responsive design with built-in features for carousel, cards, and forms.
+
+### 3. Nodejs
+
+Updated to Node version 10.8.2.

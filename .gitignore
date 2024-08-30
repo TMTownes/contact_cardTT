@@ -1,24 +1,4 @@
 
 package-lock.json
-.vscode/settings.json
-node_modules/node/node_modules/node-darwin-x64/README.md
-node_modules/.bin/node
-node_modules/.package-lock.json
-*.yml
-node_modules/node-bin-setup/index.js
-*.json
-node_modules/node/bin/node
-*.js
-node_modules/node/node_modules/.bin/node
-node_modules/node/node_modules/node-darwin-x64/bin/node
-node_modules/node/node_modules/node-darwin-x64/CHANGELOG.md
-node_modules/node/node_modules/node-darwin-x64/include/node/common.gypi
-*.gypi
-*.h
-node_modules/node/node_modules/node-darwin-x64/LICENSE
-node_modules/node/node_modules/node-darwin-x64/share/doc/node/gdbinit
-*.py
-*.1
-node_modules/node/README.md
-img/.DS_Store
+node_modules/
 .parcel-cache
