@@ -1,83 +1,214 @@
- /* Carousel Styling
- #introCarousel,
- .carousel-inner,
- .carousel-item,
- .carousel-item-active {
-   height: 100vh;
-   /* margin: 150px; 
- }
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
 
- .carousel-item:nth-child(1) {
-   background-image: url("./img/portrait1.jpeg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
- }
+:root {
+  --primary-color: #E4F0D0;
+  --secondary-color: #ffc812;
+  --tertiary-color: #383838;
+  --fushia-color: #f01fa3;
+}
 
- .carousel-item:nth-child(2) {
-   background-image: url("./img/laptop-macbook.jpeg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
- }
+body {
+  background-color: rgb(30, 30, 30);
+}
 
- .carousel-item:nth-child(3) {
-   background-image: url("./img/wDragon.PNG");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
- }
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 16%;
+}
 
- .mask {
-   margin: auto;
-   height: 100vh;
-   background: linear-gradient(
-   45deg,
-   rgba(156, 175, 70, 0.7),
-   rgba(61, 92, 77, 0.591) 100%
-   );
-   position: relative;
-   justify-content: center;
-   padding-bottom: 300px;
-   
- }
+/* Carousel Styling */
 
- /* Card Image Styling 
- .card img {
-   height: 250px;
-   width: 100%;
-   object-fit: cover;
- }
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item-active {
+ height: 100vh;
+ margin: 0px;
+}
 
- .card-body {
-   height: 300px;
-   width: 100%;
-   object-fit: contain;
-   padding: 5px;
- }
+.carousel-item:nth-child(1) {
+ background-image: url("/img/portrait1.jpeg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+}
 
- .btn-primary {
-   background-color: rgb(43, 90, 43);
- }
+.carousel-item:nth-child(2) {
+ background-image: url("/img/laptop-macbook.jpeg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+}
 
-   /* Height for devices larger than 576px 
+.carousel-item:nth-child(3) {
+ background-image: url("/img/wDragonLogo.png");
+ background-repeat: no-repeat;
+ background-size: 100vh;
+ background-position: center center;
+}
+
+.mask {
+ margin: auto;
+ height: 100vh;
+ background: linear-gradient(
+ 45deg,
+ rgba(156, 175, 70, 0.7),
+ rgba(61, 92, 77, 0.591) 100%
+ );
+ position: relative;
+ justify-content: center;
+ padding-bottom: 300px;
+ 
+}
+
+.carousel-indicators {
+list-style: none; /*Remove default markers*/
+}
+
+.carousel-indicators li::marker {
+content: ''; /*Hides the default marker*/
+}
+
+
+.btn-primary {
+ background-color: rgb(43, 90, 43);
+}
+
+ /* Height for devices larger than 576px */
 @media (min-width: 992px) {
- #introCarousel {
-   margin-top: -58.59px;
- }
- #introCarousel,
- .carousel-inner,
- .carousel-item,
- .carousel-item.active {
-   height: 50vh;
- }
+#introCarousel {
+ margin-top: -58.59px;
+}
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+ height: 75vh;
+}
 
 }
+
+/*NavBar*/
 
 .navbar .nav-link {
- color: #fff !important;
+color: #ededed !important;
 }
 
+.navbar {
+  margin: 20px;
+}
+
+/* Card Image Styling */
+.card img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+ }
+ 
+ .card-body {
+  height: auto;
+  width: auto;
+  /* object-fit: contain; */
+  padding: 5px;
+  background-color: var(--tertiary-color);
+ }
+
 .card {
-  border-radius: 4px;
-} */
+border-radius: 6px;
+background: var(--tertiary-color);
+box-shadow: 0 6px 10px rgba(0,0,0,.08), 0px 0px 6px rgba(0,0,0,.05);
+  transition: .3s;
+  transform: cubic-bezier(.155,1.105, .295, 1.12);
+  box-shadow: .3s;
+  -webkit-transform: cubic-bezier(.155,1.105,.295,1.12);
+padding: 10px 10px 10px auto;
+cursor: pointer;
+}
+
+.card:hover {
+transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0px 4px 8px rgba(0,0,0,.06);
+}
+
+.card-body .btn {
+border: none;
+}
+
+.card-title {
+  color: var(--secondary-color);
+}
+
+#contact {
+  color: var(--fushia-color);
+  padding: 10px;
+}
+
+.card-text {
+color: var(--primary-color)
+}
+
+.about {
+color: var(--secondary-color);
+}
+
+.contactCard {
+  border: 2px solid rgb(92, 187, 92);
+  margin: 10px 260px;
+  padding: 5px;
+  width: 80vh;
+}
+
+.error-message {
+color: orangered;
+font-weight: bolder;
+}
+
+.form-outline input-box {
+justify-content: space-between;
+}
+
+.form-outline {
+padding: 18px;
+
+outline: none;
+border-radius: 6px;
+}
+
+.form-outline .form-label {
+color: #ededed;
+margin: 12px 0;
+background: transparent;
+width: 50%;
+}
+
+.form-outline .form-label::placeholder {
+color: rgba(255, 255, 255, .3);
+}
+
+.contact-form .btn {
+border: none;
+}
+
+.form-check-label {
+  color: var(--fushia-color);
+}
+
+.progress {
+  color: #d93025;
+  background-color: var(--tertiary-color);
+  justify-content: center;
+}
+
+.error-message {
+font-size: 14.5px;
+color: #d93025;
+text-align: left;
+margin: -5px 0 10px;
+display: none;
+}
+

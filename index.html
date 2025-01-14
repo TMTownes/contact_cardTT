@@ -8,169 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </header>
     <body>
-   <style>
- /* Carousel Styling */
- #introCarousel,
- .carousel-inner,
- .carousel-item,
- .carousel-item-active {
-   height: 100vh;
-   /* margin: 150px; */
- }
 
-
- .carousel-item:nth-child(1) {
-   background-image: url("./img/portrait1.jpeg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
- }
-
- .carousel-item:nth-child(2) {
-   background-image: url("./img/laptop-macbook.jpeg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
- }
-
- .carousel-item:nth-child(3) {
-   background-image: url("./img/wDragon.PNG");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
- }
-
- .mask {
-   margin: auto;
-   height: 100vh;
-   background: linear-gradient(
-   45deg,
-   rgba(156, 175, 70, 0.7),
-   rgba(61, 92, 77, 0.591) 100%
-   );
-   position: relative;
-   justify-content: center;
-   padding-bottom: 300px;
-   
- }
-
- .carousel-indicators {
-  list-style: none; /*Remove default markers*/
- }
-
- .carousel-indicators li::marker {
-  content: ''; /*Hides the default marker*/
- }
-
- /* Card Image Styling */
- .card img {
-   height: 250px;
-   width: 100%;
-   object-fit: cover;
- }
-
- .card-body {
-   height: 300px;
-   width: 100%;
-   object-fit: contain;
-   padding: 5px;
- }
-
- .btn-primary {
-   background-color: rgb(43, 90, 43);
- }
-
-   /* Height for devices larger than 576px */
-@media (min-width: 992px) {
- #introCarousel {
-   margin-top: -58.59px;
- }
- #introCarousel,
- .carousel-inner,
- .carousel-item,
- .carousel-item.active {
-   height: 50vh;
- }
-
-}
-
-
-.navbar .nav-link {
- color: #fff !important;
-}
-
-.card {
-  border-radius: 6px;
-  background: #fff;
-  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-    transition: .3s;
-    transform: cubic-bezier(.155,1.105, .295, 1.12);
-    box-shadow: .3s;
-    -webkit-transform: cubic-bezier(.155,1.105,.295,1.12);
-  padding: 15px 50px 15px 20px;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}
-
-.card-body .btn {
-  border: none;
-}
-
-.error-message {
-  color: orangered;
-  font-weight: bolder;
-}
-
-.form-outline input-box {
-  justify-content: space-between;
-}
-
-.form-outline {
-  padding: 18px;
-  border: 2px solid rgb(92, 187, 92);
-  outline: none;
-  border-radius: 6px;
-}
-
-.form-outline .form-label {
-  color: #ededed;
-  margin: 12px 0;
-  background: transparent;
-  width: 50%;
-}
-
-.form-outline .form-label::placeholder {
-  color: rgba(255, 255, 255, .3);
-}
-
-.contact-form .btn {
-  border: none;
-}
-
-.error-message {
-  font-size: 14.5px;
-  color: #d93025;
-  text-align: left;
-  margin: -5px 0 10px;
-  display: none;
-}
-
-
-   </style>
 
       <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" id="top" style="z-index: 2000;">
     <div class="container-fluid">
       <!-- Navbar brand -->
       <a class="navbar-brand nav-link" href="#top" >
-        <strong>TT</strong>
+        <img src="./img/TTLogo.JPG" alt="TT" class="logo">
+        <!-- <strong>TT</strong> -->
       </a>
       <button class="navbar-toggler" type="button" data-bs-collapse-init data-bs-target="#navbarExample01"
               aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
@@ -249,7 +98,7 @@
               <h5 class="mb-4">Dynamic Web Developer</h5>
               <a
                  class="btn btn-outline-light btn-lg m-2" data-bs-ripple-init
-                 href="https://github.com/TMTownes/Portfolio-Website"
+                 href="https://github.com/TMTownes?tab=repositories"
                  role="button"
                  rel="nofollow"
                  target="_blank"
@@ -257,7 +106,7 @@
                 >
               <a
                  class="btn btn-outline-light btn-lg m-2" data-bs-ripple-init
-                 href="./files/TTownesResume.2024 PDF.pdf"
+                 href="./files/Tabitha_Townes2024.pdf"
                  target="_blank"
                  role="button"
                  >My Resume</a
@@ -342,19 +191,19 @@
         <div class="col-md-6 gx-5 mb-4">
           <div class="bg-image hover-overlay shadow-2-strong" data-bs-ripple-init data-bs-ripple-color="light">
             <img src="./img/hay4.jpg" class="img-fluid rounded-start" alt="About Image" />
-            <a href="#!">
+            <a href="#!" >
               <div class="card" style="background-color: rgba(251, 251, 251, 0.15);"></div>
             </a>
           </div>
         </div>
 
         <div class="col-md-6 gx-5 mb-4">
-          <h4 id="about"><strong>About Me</strong></h4>
-          <p class="text-muted">
+          <h4 class="about"><strong>About Me</strong></h4>
+          <p class="card-text">
             I am a creative, adventurous free spirit who enjoys long walks with my beagle, paddle boarding, any kind of festival, and soaking up the sun.
           </p>
-          <p><strong>My Journey</strong></p>
-          <p class="text-muted">
+          <p class="about"><strong>My Journey</strong></p>
+          <p class="card-text">
             As a career changer, I am excited to bring my wealth of experience from around the globe to the world of software development. I am inspired to create dynamic sites using REST APIs, Reactjs, and JQuery. I have experience with SQL, MySQL, Python, and Java including Spring and Spring Boot.  
           </p>
         </div>
@@ -369,10 +218,10 @@
 
     <!--Section: Content-->
     <section class="text-center">
-      <h4 class="mb-5" id="projects"><strong>Current Projects</strong></h4>
+      <h4 class="mb-5 about" id="projects"><strong>Current Projects</strong></h4>
 
       <div class="row">
-        <div class="col-lg-4 col-md-12 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4">
           <div class="card">
             <div class="bg-image hover-overlay" data-bs-ripple-init data-bs-ripple-color="light">
               <img
@@ -386,8 +235,10 @@
             <div class="card-body">
               <h5 class="card-title">Digital Contact Cards</h5>
               <p class="card-text">
-                Small business landing pages linked to QR keychains. Customers have their professional bios, websites, and socials all in one location that is easily shared.
+                Small business landing pages linked to QR keychains where customers have their professional information all in one location that is easily shared.
               </p>
+              <p class="progress">In Progress!</p>
+
               <a href="#!" class="btn btn-primary" data-bs-ripple-init>Project</a>
             </div>
           </div>
@@ -397,7 +248,7 @@
           <div class="card">
             <div class="bg-image hover-overlay" data-bs-ripple-init data-bs-ripple-color="light">
               <img
-                   src="./img/OR.PNG"
+                   src="./img/OR.png"
                    class="img-fluid"
                    />
               <a href="#!">
@@ -409,6 +260,7 @@
               <p class="card-text">
                 Responsive website for a community non-profit. Features include: member login, events calendar, and photo gallery.
               </p>
+              <p class="progress">In Progress!</p>
               <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Project</a>
             </div>
           </div>
@@ -430,6 +282,8 @@
               <p class="card-text">
                 Wordpress site dedicated to author's written work. Site includes fan forum, author's newsletter, and product store.
               </p>
+              <p class="progress">In Progress!</p>
+              
               <a href="#!" class="btn btn-primary" data-bs-ripple-init>Project</a>
             </div>
           </div>
@@ -439,16 +293,88 @@
       <a href="#top">Back to top</a>
 
     
-    <!--Section: Content-->
+    <!--Section: Contact Form-->
 
-    <hr class="my-5" />
-    <section class="mb-5">
+    <hr class="my-5" >
+    <section class="mb-5 contactCard">
       <h4 class="mb-5 text-center" id="contact"><strong>Let's Stay In Contact</strong></h4>
 
       <div class="row d-flex justify-content-center">
         <div class="col-md-6">
-          <form class="contact-form" >
-            <!-- 2 column grid layout with text inputs for the first and last names -->
+          <form class="contact-form" action="https://formsubmit.co/tabithatownes@email.com" method="POST">
+            <div class="form-outline" data-bs-input-init>
+
+            <!-- Email input  -->
+            <div class="form-outline mb-4" data-bs-input-init>               
+              <label class="form-label" for="form3Example3" required="required">Email address</label>
+              <input type="email" name="email" id="form3Example3" class="form-control" placeholder="Email Address" required>
+              <div class="error-message">
+                Please enter a valid email address.
+              </div>
+            </div>
+
+             <!-- Telephone input  -->
+            <div class="form-outline mb-4" data-bs-input-init>
+              <label class="form-label" for="form3Example4" >Telephone</label>
+              <input type="tel" name="phone" id="form3Example4" class="form-control" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="###-###-####" required/>
+              <div class="error-message">
+                Please enter a valid US telephone number (###-###-####) for a callback.
+              </div>
+            </div>
+            <!-- Subject Line input: for replies -->
+            <div class="form-outline mb-4" data-bs-input-init>
+              <label class="form-label" for="form2Example3" required="required">Subject Line</label>
+              <input type="text" name="_subject" id="form2Example3" class="form-control" placeholder="Message Summary" required/>
+              <div class="error-message">
+                Subject cannot be blank.
+              </div>
+            </div>
+            
+            <!-- Message Input  -->
+             <div class="form-outline mb-4" data-bs-input-init>
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" type="text" name="message" id="exampleFormControlTextarea1" rows="10" placeholder="Type your message here" maxlength="240" data-bs-show-counter="true" required></textarea>
+              <div class="error-message">
+                Message does not meet requirements.
+              </div>
+             </div>
+            <!-- <input type="text" name="name"  placeholder="Write you message here" required> -->
+            
+            <!-- Checkbox  -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input
+                     class="form-check-input me-2"
+                     type="checkbox"
+                     id="checkbox"
+                     checked
+                     />
+              <label class="form-check-label" for="form2Example3">
+                Subscribe to my channels
+              </label>
+            </div> 
+                                     <!-- Submit button  -->
+            <button type="submit" class="btn btn-primary btn-block mb-4" data-bs-ripple-init>
+              Submit
+            </button>
+            </div>
+
+
+          <!-- Hidden Actions -->
+            <!-- Thank You Page -->
+            <input type="hidden" name="_next" value="https://contact_cardTT/pages/thanks.html">
+            <!-- Spam Control -->
+            <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+            <!-- Auto Response Message -->
+            <input type="hidden" name="_autoresponse" value="Hi! It's Tabitha. Thank you for reaching out. I will be in contact soon!">
+            <!-- Submission Template -->
+            <input type="hidden" name="_template" value="table">
+           
+       </form>
+       
+       
+          
+          <!-- <form class="contact-form" >
+             2 column grid layout with text inputs for the first and last names 
             <div class="row mb-4">
               <div class="col">
                 <div class="form-outline" data-bs-input-init>
@@ -468,94 +394,41 @@
                   </div>
                 </div>
               </div>
+            </div> 
             </div>
+          -->
 
-            <!-- Email input -->
-            <div class="form-outline mb-4" data-bs-input-init>
-              <input type="email" id="form3Example3" class="form-control" name="email" placeholder="name@email.com" required/>
-              <label class="form-label" for="form3Example3" required="required">Email address</label>
-              <div class="error-message">
-                Please enter a valid email address.
-              </div>
-            </div>
 
-            <!-- Telephone input -->
-            <div class="form-outline mb-4" data-bs-input-init>
-              <input type="tel" id="form3Example4" class="form-control" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="###-###-####" required/>
-              <label class="form-label" for="form3Example4" >Telephone</label>
-              <div class="error-message">
-                Please enter a valid US telephone number (###-###-####).
-              </div>
-            </div>
-
-            <!-- Subject Line input -->
-            <div class="form-outline mb-4" data-bs-input-init>
-              <input type="text" id="form2Example3" class="form-control" placeholder="Subject" required/>
-              <label class="form-label" for="form2Example3" required="required">Subject Line</label>
-              <div class="error-message">
-                Subject cannot be blank.
-              </div>
-            </div>
-
-            <!-- Message Input -->
-             <div class="form-outline mb-4" data-bs-input-init>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Type your message here" maxlength="240" data-bs-show-counter="true"></textarea>
-              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-              <div class="error-message">
-                Message does not meet requirements.
-              </div>
-             </div>
-
-            <!-- Checkbox -->
-            <!-- <div class="form-check d-flex justify-content-center mb-4">
-              <input
-                     class="form-check-input me-2"
-                     type="checkbox"
-                     value=""
-                     id="form2Example3"
-                     checked
-                     />
-              <label class="form-check-label" for="form2Example3">
-                Subscribe to my channels
-              </label>
-            </div> -->
-
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-4" data-bs-ripple-init>
-              Submit
-            </button>
-
-            <!-- Register buttons -->
-            <div class="text-center">
+            <!-- Register buttons  -->
+            <div class="form-check-label text-center">
               <p>or link up with:</p>
 
               <a class="btn btn-primary btn-floating mx-1" href="https://www.instagram.com/tabithatownes" target="_blank">
                 <i class="fab fa-instagram"></i>
               </a>
 
-                <!-- LinkedIn -->
+              <!-- LinkedIn  -->
               <a class="btn btn-primary btn-floating mx-1" href="https://www.linkedin.com/in/tabitha-townes-77a64248" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
               </a>
 
-              <!-- <button type="button" class="btn btn-primary btn-floating mx-1" data-bs-ripple-init>
+              <button type="button" class="btn btn-primary btn-floating mx-1" data-bs-ripple-init>
                 <i class="fab fa-twitter"></i>
-              </button> -->
+              </button> 
 
-              <!-- GitHub -->
+              <!-- GitHub  -->
               <a class="btn btn-primary btn-floating mx-1" href="https://github.com/TMTownes" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             </div>
-          </form>
-        </div>
-
-        <a href="#top">Back to top</a>
-
+        </div> 
       </div>
     </section>
+
+    <a href="#top">Back to top</a>
     <!--Section: Content-->
   </div>
+  
 </main>
 <!--Main layout-->
 
@@ -570,6 +443,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   <!--Form Validation-->
   <script src="https://smtpjs.com/v3/smtp.js"></script> <!--Server Connection-->
-  <script> src="js/scripts.js"</script>
+  <script src="./js/index.js"></script>
+  <script type="module" src="./js/index.js"></script>
   </body>
 </html>
